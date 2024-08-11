@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto | Sansu</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--HTML side-->
+
+    <!--Main side-->
+    <main class="main">
+
+        <!--Header side-->
+        <h1 class=" header header__logo"><img src="/img/logo.jpeg" alt="logo de Alura"></h1>
+
+
+        <!--Main side 1 container-->
+        <section class="main__container">
+            <section class="main__container__input_text">
+                <textarea name="" id="user_text">Ingrese el texto aquí</textarea>
+            </section>
+            <section class="main__container__alert">
+                <img src="./img/exclamacion.png" alt="" class="main__container__alert_logo">
+                <p class="main__container__alert_text">
+                    Solo letras minúsculas y sin acentos
+                </p>
+            </section>
+            <section class="main__container__buttons">
+                <button onclick="encriptador()" class="button_1" id="encrypt_button">Encriptar</button>
+                <button onclick="desencriptador()" class="button_2" id="decrypt_button">Desencriptar</button>
+            </section>
+        </section>
+
+        <!--Main side 2 container-->
+        <section class="main__output_text">
+            <img src="/img/muñeco.jpeg" alt="Dibujo de un muñeco">
+            <p class="output_text">Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            <button class="button_output" disabled>Copiar</button>
+        </section>  
+    </main>
+
+    <!--Footer side-->
+    <footer class="footer">
+        <p>&copy Desarrollado por Sansu Inc.</p>
+    </footer>
+
+
+    <!--Javascript side-->
+    <script src="app.js"></script>
+</body>
+</html>
